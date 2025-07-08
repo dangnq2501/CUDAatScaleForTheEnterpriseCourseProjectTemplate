@@ -36,7 +36,7 @@ INC_DIR = common/include
 NVCC = /usr/local/cuda/bin/nvcc
 CXX = g++
 CXXFLAGS = -std=c++11 -I/usr/local/cuda/include -I$(INC_DIR) -Iinclude
-
+CXXFLAGS += -I/usr/include
 LDFLAGS = -L/usr/local/cuda/lib64 -lcudart -lnppc -lnppial -lnppicc -lnppidei -lnppif -lnppig -lnppim -lnppist -lnppisu -lnppitc
 
 # Define directories
